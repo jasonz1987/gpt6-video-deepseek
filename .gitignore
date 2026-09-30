@@ -1,0 +1,9 @@
+node_modules/
+.render-cache/
+dist/
+out/
+.DS_Store
+.env
+.env.*
+*.tsbuildinfo
+/*.mp4

@@ -1,0 +1,42 @@
+{
+  "name": "gpt6-video-deepseek",
+  "version": "1.0.0",
+  "description": "DeepSeek 求索：15 段代码动画复刻",
+  "repository": {
+    "type": "git",
+    "url": "git+ssh://git@github.com/jasonz1987/gpt6-video-deepseek.git"
+  },
+  "license": "UNLICENSED",
+  "private": true,
+  "dependencies": {
+    "@remotion/cli": "4.0.530",
+    "@remotion/media": "4.0.530",
+    "@remotion/tailwind-v4": "4.0.530",
+    "react": "19.2.3",
+    "react-dom": "19.2.3",
+    "remotion": "4.0.530",
+    "tailwindcss": "4.0.0"
+  },
+  "devDependencies": {
+    "@remotion/eslint-config-flat": "4.0.530",
+    "@types/react": "19.2.7",
+    "@types/web": "0.0.166",
+    "eslint": "9.39.5",
+    "prettier": "3.8.1",
+    "typescript": "5.9.3"
+  },
+  "scripts": {
+    "dev": "remotion studio",
+    "build": "remotion bundle",
+    "upgrade": "remotion upgrade",
+    "lint": "eslint src && tsc",
+    "render": "node scripts/render.mjs full",
+    "typecheck": "tsc --noEmit",
+    "render:stable": "node scripts/render.mjs full",
+    "render:qa": "node scripts/render.mjs qa"
+  },
+  "sideEffects": [
+    "*.css"
+  ],
+  "homepage": "https://github.com/jasonz1987/gpt6-video-deepseek#readme"
+}
